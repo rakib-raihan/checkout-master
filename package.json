@@ -1,0 +1,72 @@
+{
+  "name": "fraud",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "https://eye4fraud-sandbox1.mybigcommerce.com/",
+  "dependencies": {
+    "@bigcommerce/checkout-sdk": "1.30.0",
+    "@material-ui/core": "4.3.0",
+    "@material-ui/icons": "^4.2.1",
+    "autosuggest-highlight": "^3.1.1",
+    "card-validator": "^6.1.0",
+    "final-form": "4.18.2",
+    "format-string-by-pattern": "^1.1.1",
+    "http-proxy-middleware": "^0.19.1",
+    "immutability-helper": "^3.0.0",
+    "jss": "^10.0.0",
+    "jss-rtl": "^0.3.0",
+    "libphonenumber-js": "^1.7.18",
+    "material-ui-popup-state": "^1.4.0",
+    "numeral": "^2.0.6",
+    "ramda": "^0.26.1",
+    "react": "^16.8.6",
+    "react-autosuggest": "^9.4.3",
+    "react-dom": "^16.8.6",
+    "react-final-form": "6.5.1",
+    "react-final-form-listeners": "^1.0.2",
+    "react-frame-component": "^4.1.1",
+    "react-ga": "^2.6.0",
+    "react-helmet": "^6.0.0-beta",
+    "react-phone-number-input": "^2.5.3",
+    "react-places-autocomplete": "^7.2.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.0",
+    "react-use": "^10.3.0",
+    "typeface-cabin": "^0.0.72",
+    "winston": "^3.2.1",
+    "yup": "^0.27.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "./node_modules/.bin/jest",
+    "eject": "react-scripts eject",
+    "build:cache": "mkdir -p cache && rm -rf cache/* && cp -R build/static/js/*.js cache && cp -R build/static/css/*.css cache",
+    "build:rename": "mv cache/2.*.chunk.js cache/bundle.js && mv cache/main.*.chunk.js cache/main.js && mv cache/2.*.chunk.css cache/bundle.css && mv cache/main.*.chunk.css cache/main.css",
+    "deploy": "npm run build:cache && npm run build:rename && aws s3 sync cache/ s3://ec-checkout-prod",
+    "storybook": "start-storybook -p 9001",
+    "screenshot": "storybook-chrome-screenshot -p 9001 -c .storybook"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "globals": {
+      "page": true,
+      "browser": true
+    }
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-notes": "^5.1.9",
+    "@storybook/addon-storysource": "^5.1.9",
+    "@storybook/addons": "^5.1.9",
+    "@storybook/react": "^5.1.9",
+    "jest-puppeteer": "^4.3.0",
+    "puppeteer": "^1.19.0"
+  }
+}

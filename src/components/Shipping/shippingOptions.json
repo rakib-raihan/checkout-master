@@ -1,0 +1,32 @@
+[
+  {
+    "id": "9ba45e71fe66e1cd757f022dcae331b0",
+    "type": "shipping_pickupinstore",
+    "description": "Pickup In Store",
+    "imageUrl": "",
+    "cost": "FREE",
+    "transitTime": "",
+    "isRecommended": false,
+    "additionalDescription": ""
+  },
+  {
+    "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+    "type": "freeshipping",
+    "description": "Free Shipping",
+    "imageUrl": "",
+    "cost": "FREE",
+    "transitTime": "",
+    "isRecommended": true,
+    "additionalDescription": ""
+  },
+  {
+    "id": "3a4d5267d319ffabbc7b15850e73ed4e",
+    "type": "shipping_flatrate",
+    "description": "Flat Rate",
+    "imageUrl": "",
+    "cost": "$20.00",
+    "transitTime": "",
+    "isRecommended": false,
+    "additionalDescription": ""
+  }
+]

@@ -1,0 +1,146 @@
+{
+  "id": "f711cc4f-64b6-46d2-9a80-7eab1c156897",
+  "orderId": null,
+  "shippingCostTotal": "$0.00",
+  "shippingCostBeforeDiscount": 0,
+  "handlingCostTotal": 0,
+  "taxTotal": "$0.00",
+  "taxes": [
+    {
+      "name": "Tax",
+      "amount": 0
+    }
+  ],
+  "subtotal": "$109.00",
+  "grandTotal": "$109.00",
+  "outstandingBalance": 109,
+  "isStoreCreditApplied": false,
+  "giftCertificates": [],
+  "createdTime": "2019-08-08T15:27:00+00:00",
+  "updatedTime": "2019-08-10T13:43:43+00:00",
+  "customerMessage": "",
+  "promotions": [],
+  "payments": [
+    {}
+  ],
+  "billingAddress": {
+    "id": "5d4c5450de1bc",
+    "firstName": "First ",
+    "lastName": "Name",
+    "email": "me@azimgd.com",
+    "company": "",
+    "address1": "Unitech Infospace IT/ITES SEZ, Street No 0368",
+    "address2": "",
+    "city": "New Town",
+    "stateOrProvince": "WB",
+    "stateOrProvinceCode": "",
+    "country": "United States",
+    "countryCode": "US",
+    "postalCode": "700156",
+    "phone": "+12423455602",
+    "customFields": []
+  },
+  "cart": {
+    "id": "f711cc4f-64b6-46d2-9a80-7eab1c156897",
+    "customerId": 0,
+    "email": "me@azimgd.com",
+    "currency": {
+      "name": "US Dollars",
+      "code": "USD",
+      "symbol": "$",
+      "decimalPlaces": 2
+    },
+    "isTaxIncluded": false,
+    "baseAmount": 109,
+    "discountAmount": 0,
+    "cartAmount": 109,
+    "coupons": [],
+    "discounts": [
+      {
+        "id": "3f82ce40-1a0c-4fa1-bed9-39862e76da05",
+        "discountedAmount": 0
+      }
+    ],
+    "lineItems": {
+      "physicalItems": [
+        {
+          "id": "3f82ce40-1a0c-4fa1-bed9-39862e76da05",
+          "parentId": null,
+          "variantId": 64,
+          "productId": 80,
+          "sku": "OTL",
+          "name": "[Sample] Orbit Terrarium - Large",
+          "url": "https://test1832.mybigcommerce.com/orbit-terrarium-large/",
+          "quantity": 1,
+          "brand": "",
+          "isTaxable": true,
+          "imageUrl": "https://cdn11.bigcommerce.com/s-w7ti8gieh7/products/80/images/272/roundterrariumlarge.1435946546.220.290.jpg?c=2",
+          "discounts": [],
+          "discountAmount": 0,
+          "couponAmount": 0,
+          "listPrice": 109,
+          "salePrice": 109,
+          "extendedListPrice": 109,
+          "extendedSalePrice": 109,
+          "isShippingRequired": true,
+          "giftWrapping": null,
+          "addedByPromotion": false,
+          "options": []
+        }
+      ],
+      "digitalItems": [],
+      "giftCertificates": [],
+      "customItems": []
+    },
+    "createdTime": "2019-08-08T15:27:00+00:00",
+    "updatedTime": "2019-08-10T13:43:43+00:00"
+  },
+  "customer": {
+    "id": 0,
+    "isGuest": true,
+    "email": "",
+    "firstName": "",
+    "lastName": "",
+    "fullName": "",
+    "addresses": [],
+    "storeCredit": 0
+  },
+  "consignments": [
+    {
+      "id": "5d4c544fc0fc4",
+      "shippingCost": 0,
+      "handlingCost": 0,
+      "couponDiscounts": [],
+      "discounts": [],
+      "lineItemIds": [
+        "3f82ce40-1a0c-4fa1-bed9-39862e76da05"
+      ],
+      "selectedShippingOption": {
+        "id": "4dcbf24f457dd67d5f89bcf374e0bc9b",
+        "type": "freeshipping",
+        "description": "Free Shipping",
+        "imageUrl": "",
+        "cost": 0,
+        "transitTime": "",
+        "additionalDescription": ""
+      },
+      "shippingAddress": {
+        "firstName": "First ",
+        "lastName": "Name",
+        "email": "me@azimgd.com",
+        "company": "",
+        "address1": "Unitech Infospace IT/ITES SEZ, Street No 0368",
+        "address2": "",
+        "city": "New Town",
+        "stateOrProvince": "WB",
+        "stateOrProvinceCode": "",
+        "country": "United States",
+        "countryCode": "US",
+        "postalCode": "700156",
+        "phone": "+12423455602",
+        "customFields": []
+      }
+    }
+  ],
+  "coupons": []
+}

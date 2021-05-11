@@ -1,0 +1,55 @@
+* {
+  letter-spacing: 0.35px;
+}
+
+@-webkit-keyframes autofill {
+  to {
+    background: transparent;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.react-phone-number-input {
+  height: 100% !important;
+}
+.react-phone-number-input__row {
+  position: relative !important;
+  height: 100% !important;
+}
+.react-phone-number-input__country--native {
+  position: absolute !important;
+  z-index: 1;
+  top: 50%;
+  left: 18px;
+  transform: translate(0, -50%);
+}
+.react-phone-number-input__country-select-arrow {
+  display: none !important;
+}
+.react-phone-number-input__icon {
+  border: none !important;
+}
+.react-phone-number-input__input {
+  height: 100% !important;
+  z-index: 0;
+}
+.react-phone-number-input__icon-image {
+  display: inline-block;
+}
+.pac-container {
+  box-shadow: 0 !important;
+  border-radius: 4px !important;
+  margin-top: 4px;
+}
+.pac-item {
+  padding: 4px 12px;
+}
